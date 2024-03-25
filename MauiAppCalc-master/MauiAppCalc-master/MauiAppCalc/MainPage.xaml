@@ -22,7 +22,7 @@
             </Style>
 
             <Style x:Key="BotaoLaranja" TargetType="Button" BasedOn="{StaticResource EstiloComum}">
-                <Setter Property="BackgroundColor" Value="DarkGreen"/>
+                <Setter Property="BackgroundColor" Value="Purple"/>
                 <Setter Property="TextColor" Value="White"/>
             </Style>
 
@@ -31,6 +31,7 @@
 
     <ContentPage.Content>
         <Grid RowDefinitions="150, *, *, *, *, *, *"
+              ColumnSpacing="8" RowSpacing="8"
               ColumnDefinitions="*, *, *, *">
             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
                      x:Name="visor" Text="0" HorizontalTextAlignment="End"
@@ -96,7 +97,7 @@
                     x:Name="ponto" Text="." Clicked="ponto_Clicked"/>
             <Button Grid.Row="5" Grid.Column="3"
                     Style="{StaticResource BotaoLaranja}"
-                    x:Name="engual" Text="=" Clicked="engual_Clicked"/>
+                    x:Name="engual" Text="=" Clicked="igual_Clicked"/>
         </Grid>
     </ContentPage.Content>
 
